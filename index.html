@@ -1,19 +1,30 @@
 <html>
 <head>
-</head>
-<script language="JavaScript">
-<!--
-var password="";
-password=prompt('x+y+z=3, x^2+y^2+z^2=29, X^3+y^3+z^3=45 :','');
-if (password != '-24'){    
-   {alert("password is not correct, if you can enter, depends. it's a bug, buti don't know how to debug, it's running well in the notepad.html and mobilep hone");
-    window.opener=null; window.close();}  // 密码不正确就关闭
-//-->
+<script language = JavaScript>
+function password() {
+	var testV = 1;
+	var pass1 = prompt('x+y+z=3, x^2+y^2+z^2=29, x^3+y^3+z^3=45,\nxyz=?', '');
+	while (testV < 3) {
+		if (!pass1) history.go(-1);
+		if (pass1 == "-10") {
+			alert("Hello Henry");
+			alert("In your 30th birthday")
+			alert("Wish You")
+			break;
+		}
+		testV += -1;
+		var pass1 = prompt('Answer is wrong.\nx+y+z=3, x^2+y^2+z^2=29, x^3+y^3+z^3=45,\nxyz=?');
+	}
+	if (pass1 != "password" & testV == 3) history.go(-1);
+	return " ";
+}
+document.write(password());
 </script>
 </head>
+
 <body>
 Press " ctrl +f press 6 "</p>
-</p>
+  
 999999999999996699999999999999999999996699999999669999999999999999966999999999999996699999999999999999999996699999999999999</p>
 999999999999669999999999999999999999996699999999669999999999999999966999999999999996699999999996666666666666666666666666699</p>
 999999996666666666666666999999999999996699999999669999999999999999966999999999966666666669999996699999999996699999999999999</p>
